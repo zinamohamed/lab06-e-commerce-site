@@ -15,38 +15,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400&family=Raleway:wght@100;300;400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="css/style.css" />  
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../css/style.css" />  
     <title>Zinc*</title>
 </head>
 
 <body>
-            <div id="navbar" class="navbar">
-                <div class="logo">
-                  <h1>Zinc*</h1>
-                </div>
-                <nav>
-                  <ul>
-                    <li><a href="#top-container">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="./products/products.html">Products</a></li>
-                    <li><a href="./cart/cart.html">Shopping Cart</a></li>
-                  </ul>
-                </nav>
-            </div>
-            <div id="top-container" class="top-container">
-                <h3>Personalized Skincare Starts Here</h3>
-                <p>Enjoy everyday luxuries that don't cost the Earth. </p>
-                <br>
-                <form method="get" action="./products/products.html">
-                    <button class="top-btn">Explore Our Products</button>
-                </form>
-            </div>          
-    <script type="module" src="./app.js"></script>
-</body>
+  <div id="navbar" class="navbar">
+    <div class="logo">
+      <h1>Zinc*</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="../cart/cart.html">Shopping Cart</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div id="cart-container" class="cart-container">
+    <h5>Your Shopping Cart:</h5>
+    <table>
+      <th>Product:</th>
+      <th>Quantity:</th>
+      <th>Price:</th>
+    </table>
+    <button>Place Order</button>
+  </div>   
 
-    
+
+  <script type="module" src="product.js"></script>
+</body>
+  
     
 </html>
