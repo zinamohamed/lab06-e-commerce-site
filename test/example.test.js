@@ -3,8 +3,10 @@
 
 
 import { renderProduct } from '../products/render-product.js';
-import { findByID } from '../utils.js';
+import { findById } from '../utils.js';
 import { products } from '../data.js'; 
+import { calcItemTotal } from '../utils.js';
+import { cart } from '../cart/cart-data.js';
 
 
 
@@ -44,7 +46,16 @@ test('findByID should take in 1 and the products array and return Niacinamide 10
         type: 'Serum'
     };
 
-    const actual = findByID(1, products);
+    const actual = findById(1, products);
+
+    expect.deepEqual(actual, expected);
+
+});
+
+test('calcItemTotal should take in a cart item quantity and price and return the total after multiplying', (expect) => {
+    const expected = 79.95;
+
+    const actual = calcItemTotal(findById(1, cart), findById(1, products));
 
     expect.deepEqual(actual, expected);
 
