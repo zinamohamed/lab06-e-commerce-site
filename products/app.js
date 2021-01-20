@@ -1,6 +1,6 @@
 import { products } from './data.js';
 import { renderProduct } from './render-product.js';
-console.log(products);
+
 
 const list = document.getElementById('list');
 

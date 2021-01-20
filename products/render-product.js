@@ -11,8 +11,9 @@ export function renderProduct(product) {
  
     const img = document.createElement('img');
     img.classList.add('product-image');
-    li.append(img);
     img.src = `../assets/${product.image}`;
+    li.append(img);
+    
 
     const pType = document.createElement('p');
     pType.classList.add('product-type');
