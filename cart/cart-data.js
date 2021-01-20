@@ -1,7 +1,7 @@
 export const cart = [
     {
         id: 1,
-        quantity: 10
+        quantity: 5
 
     },
 
@@ -12,7 +12,7 @@ export const cart = [
     },
     {
         id: 3,
-        quantity: 11
+        quantity: 9
 
     }
 ];
