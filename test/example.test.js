@@ -54,7 +54,7 @@ test('findByID should take in 1 and the products array and return Niacinamide 10
 });
 
 test('calcItemTotal should take in a cart item quantity and price and return the total after multiplying', (expect) => {
-    const expected = 75;
+    const expected = 45;
 
     const actual = calcItemTotal(findById(1, cart), findById(1, products));
 
@@ -64,7 +64,7 @@ test('calcItemTotal should take in a cart item quantity and price and return the
 
 
 test('renderRowItems should render a table row with a products name, quantity and price', (expect) => {
-    const expected = '<tr><td><img src="../assets/1.png"></td><td>Niacinamide 10%</td><td>5</td><td>$75\n\n    </td></tr>';
+    const expected = '<tr><td><img src="../assets/1.png"></td><td>Niacinamide 10%</td><td>3</td><td>$45\n\n    </td></tr>';
 
     const actual = renderRowItems(findById(1, cart), findById(1, products));
 

@@ -6,7 +6,7 @@ import { products } from '../data.js';
 import { calcItemTotal } from '../utils.js';
 
 
-const table = document.querySelector('table');
+const table = document.querySelector('tbody');
 
 let total = 0;
 
@@ -16,7 +16,7 @@ for (let item of cart) {
 
     const totalForThisProduct = calcItemTotal(item, product);
 
-    total = total + totalForThisProduct;
+    total += totalForThisProduct;
     
     const tableRowDom = renderRowItems(item, product);
 
