@@ -109,13 +109,20 @@ body, html {
     padding: 20px;
     margin: 20px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+  
   }
 
   th {
     padding: 20px;
     margin: 20px;
   }
+
+  td {
+    padding: 20px;
+    margin: 20px;
+  }
+
 
 
   .product-section {

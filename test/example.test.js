@@ -64,7 +64,7 @@ test('calcItemTotal should take in a cart item quantity and price and return the
 
 
 test('renderRowItems should render a table row with a products name, quantity and price', (expect) => {
-    const expected = "<tr><td>Niacinamide 10%</td><td>5</td><td>$15.99</td></tr>";
+    const expected = '<tr><td>Niacinamide 10%</td><td>5</td><td>$15.99</td></tr>';
 
     const actual = renderRowItems(findById(1, cart), findById(1, products));
 

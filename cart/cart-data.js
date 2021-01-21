@@ -12,7 +12,7 @@ export const cart = [
     },
     {
         id: 3,
-        quantity: 9
+        quantity: 4
 
     }
 ];

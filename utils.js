@@ -1,3 +1,5 @@
+
+
 export function findById(id, array) {
     for (let item of array) {
         if (item.id === id) {
@@ -27,7 +29,9 @@ export function renderRowItems(cartItem, product) {
     quantityTd.textContent = quantity;
     
     const priceTd = document.createElement('td');
-    priceTd.textContent = `$${product.price}`;
+    priceTd.textContent = `$${calcItemTotal(cartItem, product)}
+
+    `;
 
 
     tr.append(nameTd, quantityTd, priceTd);
@@ -36,6 +40,11 @@ export function renderRowItems(cartItem, product) {
 
 
 }
+
+
+
+
+
 
 
     
