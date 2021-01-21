@@ -24,6 +24,12 @@ export function renderRowItems(cartItem, product) {
     const nameTd = document.createElement('td');
     nameTd.textContent = product.name;
     
+    const imgTd = document.createElement('td');
+    const img = document.createElement('img');
+    img.src = `../assets/${product.image}`;
+    imgTd.append(img);
+    
+    
     const quantityTd = document.createElement('td');
     const quantity = cartItem.quantity;
     quantityTd.textContent = quantity;
@@ -34,7 +40,7 @@ export function renderRowItems(cartItem, product) {
     `;
 
 
-    tr.append(nameTd, quantityTd, priceTd);
+    tr.append(imgTd, nameTd, quantityTd, priceTd);
 
     return tr;
 
