@@ -100,6 +100,7 @@ body, html {
     align-items: center;
     height: 100%;
     padding: 100px;
+    width: 100%;
    
     
   
@@ -110,6 +111,17 @@ body, html {
     margin: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #e5989b;
+    padding: 10px 20px;
+    margin: 0 5px;
+    text-decoration: none;
+    font-family: 'Belleza', sans-serif;
+    font-size: 1em;
+    line-height: 2;
+    letter-spacing: 5px;;
+    width: 100%;
   
   }
 
