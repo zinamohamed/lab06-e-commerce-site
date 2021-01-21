@@ -6,6 +6,7 @@ import { renderProduct } from '../products/render-product.js';
 import { findById } from '../utils.js';
 import { products } from '../data.js'; 
 import { calcItemTotal } from '../utils.js';
+import { renderRowItems } from '../utils.js';
 import { cart } from '../cart/cart-data.js';
 
 
@@ -58,5 +59,15 @@ test('calcItemTotal should take in a cart item quantity and price and return the
     const actual = calcItemTotal(findById(1, cart), findById(1, products));
 
     expect.deepEqual(actual, expected);
+
+});
+
+
+test('renderRowItems should render a table row with a products name, quantity and price', (expect) => {
+    const expected = "<tr><td>Niacinamide 10%</td><td>5</td><td>$15.99</td></tr>";
+
+    const actual = renderRowItems(findById(1, cart), findById(1, products));
+
+    expect.deepEqual(actual.outerHTML, expected);
 
 });

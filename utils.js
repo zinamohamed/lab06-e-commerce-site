@@ -14,5 +14,28 @@ export function calcItemTotal(item, product) {
 
 }
 
+export function renderRowItems(cartItem, product) {
+    
+    
+    const tr = document.createElement('tr');
+
+    const nameTd = document.createElement('td');
+    nameTd.textContent = product.name;
+    
+    const quantityTd = document.createElement('td');
+    const quantity = cartItem.quantity;
+    quantityTd.textContent = quantity;
+    
+    const priceTd = document.createElement('td');
+    priceTd.textContent = `$${product.price}`;
+
+
+    tr.append(nameTd, quantityTd, priceTd);
+
+    return tr;
+
+
+}
+
 
     
