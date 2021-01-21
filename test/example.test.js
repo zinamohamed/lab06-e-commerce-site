@@ -40,7 +40,7 @@ test('should take in a product and return a li', (expect) => {
 test('findByID should take in 1 and the products array and return Niacinamide 10%', (expect) => {
     const expected = {
         id: 1,
-        price: 15.99,
+        price: 15,
         image: '1.png',
         name: 'Niacinamide 10%',
         size: '16ml',
@@ -54,7 +54,7 @@ test('findByID should take in 1 and the products array and return Niacinamide 10
 });
 
 test('calcItemTotal should take in a cart item quantity and price and return the total after multiplying', (expect) => {
-    const expected = 79.95;
+    const expected = 75;
 
     const actual = calcItemTotal(findById(1, cart), findById(1, products));
 
