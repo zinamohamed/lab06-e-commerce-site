@@ -12,8 +12,8 @@ body, html {
   
   p {
     color: #242423;
-    font-family: 'Belleza', sans-serif;
-    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     padding-right: 20px;
     padding-top: 20px;
   }
@@ -38,7 +38,7 @@ body, html {
     padding: 10px 20px;
     margin: 0 5px;
     text-decoration: none;
-    font-family: 'Belleza', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 1em;
   }
@@ -51,7 +51,7 @@ body, html {
   .navbar .logo {
     font-weight: 400;
     font-size: 2em;
-    font-family: 'Belleza', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-style: italic;
     
   }
@@ -140,7 +140,7 @@ li {
   table {
     color: #242423;
     text-decoration: none;
-    font-family: 'Belleza', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1em;
     border: 2px #fec89a solid;
     box-shadow: rgba(254, 200, 154, 0.4) 5px 5px, rgba(254, 200, 154, 0.3) 10px 10px, rgba(254, 200, 154, 0.2) 15px 15px, rgba(254, 200, 154, 0.1) 20px 20px, rgba(254, 200, 154, 0.05) 25px 25px;
@@ -189,7 +189,7 @@ tr {
 /* Global Styles */
   
 h1 {
-    color: #ee6c4d;
+    color: #e5989b;
     font-size: 1em;
     width: 50%;
     font-family: 'Belleza', sans-serif;
@@ -245,7 +245,7 @@ h6 {
     margin-top: 20px;
     text-decoration: none;
     font-family: 'Belleza', sans-serif;
-    font-weight: 200;
+    font-weight: 400;
     
     
   }
@@ -260,7 +260,11 @@ button {
   margin-top: 20px;
   text-decoration: none;
   font-family: 'Belleza', sans-serif;
-  font-weight: 200;
+  font-weight: 400;
+}
+
+button:hover {
+  box-shadow: rgba(254, 200, 154, 0.4) 5px 5px, rgba(254, 200, 154, 0.3) 10px 10px, rgba(254, 200, 154, 0.2) 15px 15px, rgba(254, 200, 154, 0.1) 20px 20px, rgba(254, 200, 154, 0.05) 25px 25px;
 }
 
  
