@@ -34,7 +34,7 @@ body, html {
   }
   
   .navbar a {
-    color: #e5989b;
+    color: #fec89a;
     padding: 10px 20px;
     margin: 0 5px;
     text-decoration: none;
@@ -61,7 +61,7 @@ body, html {
   
   
   .top-container{
-    background-color: #f8edeb;
+    background-color: #fdfffc;
     background-image: url("../assets/main-pic.png");                       
     background-repeat:no-repeat;
     background-position: bottom right;
@@ -92,7 +92,7 @@ body, html {
 }
 
 #product-section {
-    background-color: #f8edeb;
+    background-color: #fdfffc;
 }
 
 /* Cart page styling */
@@ -103,7 +103,7 @@ body, html {
     text-align: center;
     align-items: center;
     padding: 80px;
-    background-color: #f8edeb;
+    background-color: #fdfffc;
     background-image: url('https://cdn.dribbble.com/users/186058/screenshots/2168462/bg-animated.gif');
     background-size: cover;                      
     background-repeat:no-repeat;
@@ -134,7 +134,7 @@ li {
 
 #list li {
   border: 2px solid #e5989b;
-  box-shadow: rgba(254, 200, 154, 0.4) 5px 5px, rgba(254, 200, 154, 0.3) 10px 10px, rgba(254, 200, 154, 0.2) 15px 15px, rgba(254, 200, 154, 0.1) 20px 20px, rgba(254, 200, 154, 0.05) 25px 25px;
+  box-shadow: rgba(254, 200, 154, 0.5) 5px 5px, rgba(254, 200, 154, 0.4) 5px 5px, rgba(254, 200, 154, 0.3) 10px 10px, rgba(254, 200, 154, 0.2) 15px 15px, rgba(254, 200, 154, 0.1) 20px 20px, rgba(254, 200, 154, 0.05) 25px 25px;
   background-color: #fdfffc;
   
 }

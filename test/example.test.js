@@ -9,7 +9,8 @@ import { calcItemTotal } from '../utils.js';
 import { calcOrderTotal } from '../utils.js';
 import { renderRowItems } from '../utils.js';
 import { cart } from '../cart/cart-data.js';
-import { getCart } from '../cart-utils.js';
+import { getCart, setCart } from '../cart-utils.js';
+import { clearCart } from '../cart-utils.js';
 
 
 
@@ -107,4 +108,62 @@ test('getCart should return cart from local storage', (expect) => {
 
     expect.deepEqual(cart, fakeCart);
 });
+
+test('setCart should turn array into string and set to local strorage', (expect) => {
+    const fakeCart = [
+        {
+            id: 6,
+            quanitity: 5
+        },
+        {
+            id: 8,
+            quanitity: 4
+        },
+    
+
+    ];
+
+    setCart(fakeCart);
+    
+    const newCart = JSON.stringify(fakeCart);
+
+    const stringyCart = localStorage.getItem('CART');
+
+    
+
+
+    expect.deepEqual(newCart, stringyCart);
+});
+
+test('clearCart should turn array into string and set to local strorage', (expect) => {
+    const fakeCart = [
+        {
+            id: 6,
+            quanitity: 5
+        },
+        {
+            id: 8,
+            quanitity: 4
+        },
+    
+
+    ];
+
+    
+    const newCart = JSON.stringify(fakeCart);
+
+    localStorage.getItem('CART', newCart);
+
+    clearCart();
+
+    
+    const emptyCart = JSON.stringify([]);
+    const newEmptyCart = localStorage.getItem('CART');
+
+    expect.deepEqual(emptyCart, newEmptyCart);
+});
+
+
+
+
 
