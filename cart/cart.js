@@ -1,16 +1,15 @@
 
 import { findById } from '../utils.js';
 import { renderRowItems } from '../utils.js';
-import { cart } from './cart-data.js';
 import { products } from '../data.js';
 import { calcItemTotal } from '../utils.js';
-
+import { clearCart, getCart } from '../cart-utils.js';
 
 
 
 const table = document.querySelector('tbody');
 
-
+const cart = getCart();
 
 let total = 0;
 
@@ -41,7 +40,13 @@ tr.append(td1, td2, td3, td4);
 
 table.append(tr);
 
-
+const orderButton = document.querySelector('button');
+orderButton.addEventListener('click', () => {
+    
+    alert(JSON.stringify(cart, true, 2));
+    clearCart();
+    document.location.href = '../index.html'; 
+});
 
 
 
