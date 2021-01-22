@@ -42,6 +42,10 @@ body, html {
     font-weight: bold;
     font-size: 1em;
   }
+
+  .navbar a:hover {
+    color: #e5989b;
+  }
   
   .navbar ul {
     display: flex;
@@ -276,7 +280,15 @@ button {
 
 button:hover {
   box-shadow: rgba(254, 200, 154, 0.4) 5px 5px, rgba(254, 200, 154, 0.3) 10px 10px, rgba(254, 200, 154, 0.2) 15px 15px, rgba(254, 200, 154, 0.1) 20px 20px, rgba(254, 200, 154, 0.05) 25px 25px;
+  background: #fec89a;
+  color: #fdfffc;
+  border: 2px #fdfffc solid;
 }
+
+button:focus {
+  outline: none;
+}
+
 
  #place-order {
     visibility: hidden;
