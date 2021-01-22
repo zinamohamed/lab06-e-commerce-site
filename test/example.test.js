@@ -107,3 +107,4 @@ test('getCart should return cart from local storage', (expect) => {
 
     expect.deepEqual(cart, fakeCart);
 });
+

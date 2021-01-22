@@ -34,7 +34,14 @@ tr.append(td1, td2, td3, td4);
 
 table.append(tr);
 
-const orderButton = document.querySelector('button');
+
+
+const orderButton = document.getElementById('place-order');
+
+if (cart > [0]) {
+    orderButton.style.visibility = 'visible';
+}
+
 orderButton.addEventListener('click', () => {
     
     alert(JSON.stringify(cart, true, 2));
