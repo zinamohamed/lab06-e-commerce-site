@@ -1,3 +1,5 @@
+import { addToCart } from '../cart-utils.js';
+
 export function renderProduct(product) {
 
    
@@ -31,12 +33,18 @@ export function renderProduct(product) {
     li.append(pPrice);
  
     const button = document.createElement('button');
+    button.addEventListener('click', () => {
+        addToCart(product.id);
+    });
     button.textContent = 'Add to cart';
     li.append(button);
 
 
+    
+    
     return li; 
 }
+
 
 
 

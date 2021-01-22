@@ -6,6 +6,7 @@ import { products } from '../data.js';
 import { calcItemTotal } from '../utils.js';
 
 
+
 const table = document.querySelector('tbody');
 
 let total = 0;
@@ -36,6 +37,8 @@ td4.textContent = `Order total: $${total}`;
 tr.append(td1, td2, td3, td4);
 
 table.append(tr);
+
+
 
 
 

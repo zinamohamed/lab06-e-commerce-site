@@ -8,6 +8,8 @@ import { products } from '../data.js';
 import { calcItemTotal } from '../utils.js';
 import { renderRowItems } from '../utils.js';
 import { cart } from '../cart/cart-data.js';
+import { getCart } from '../cart-utils.js';
+import { clearCart } from '../cart-utils.js';
 
 
 
@@ -71,3 +73,6 @@ test('renderRowItems should render a table row with a products name, quantity an
     expect.deepEqual(actual.outerHTML, expected);
 
 });
+
+
+
