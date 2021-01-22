@@ -7,7 +7,10 @@ import { calcItemTotal } from '../utils.js';
 
 
 
+
 const table = document.querySelector('tbody');
+
+
 
 let total = 0;
 
