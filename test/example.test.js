@@ -6,6 +6,7 @@ import { renderProduct } from '../products/render-product.js';
 import { findById } from '../utils.js';
 import { products } from '../data.js'; 
 import { calcItemTotal } from '../utils.js';
+import { calcOrderTotal } from '../utils.js';
 import { renderRowItems } from '../utils.js';
 import { cart } from '../cart/cart-data.js';
 import { getCart } from '../cart-utils.js';
@@ -59,6 +60,15 @@ test('calcItemTotal should take in a cart item quantity and price and return the
     const expected = 45;
 
     const actual = calcItemTotal(findById(1, cart), findById(1, products));
+
+    expect.deepEqual(actual, expected);
+
+});
+
+test('calcOrderTotal should take in all of the cart items price and return the sum', (expect) => {
+    const expected = 139;
+
+    const actual = calcOrderTotal(cart, products);
 
     expect.deepEqual(actual, expected);
 

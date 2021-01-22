@@ -16,6 +16,21 @@ export function calcItemTotal(item, product) {
 
 }
 
+export function calcOrderTotal(cart, products) {
+    let total = 0;
+    
+    for (let item of cart) {
+        
+        const product = findById(item.id, products);
+        
+        const totalPrice = calcItemTotal(item, product);
+        
+        total = total + totalPrice;
+    }
+
+    return total;
+}
+
 export function renderRowItems(cartItem, product) {
     
     
@@ -46,6 +61,7 @@ export function renderRowItems(cartItem, product) {
 
 
 }
+
 
 
 

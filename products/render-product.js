@@ -38,7 +38,7 @@ export function renderProduct(product) {
     });
     button.textContent = 'Add to cart';
     li.append(button);
-
+    
 
     
     

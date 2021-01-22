@@ -78,7 +78,7 @@ body, html {
   /* Products page Header */
 
   .products-container{
-    background-color: #f8edeb;
+    background-color:#fdfffc;
     background-image: url("../assets/6.png");
     background-size: 450px;;                      
     background-repeat:no-repeat;
@@ -91,6 +91,10 @@ body, html {
     padding: 220px;
 }
 
+#product-section {
+    background-color: #f8edeb;
+}
+
 /* Cart page styling */
 
 .cart-container{
@@ -100,6 +104,10 @@ body, html {
     align-items: center;
     padding: 80px;
     background-color: #f8edeb;
+    background-image: url('https://cdn.dribbble.com/users/186058/screenshots/2168462/bg-animated.gif');
+    background-size: cover;                      
+    background-repeat:no-repeat;
+    background-position: center center;
     
     
 }
@@ -137,6 +145,7 @@ li {
   align-items: center;
   text-align: center;
   display: flex;
+    
 }
 
   table {
